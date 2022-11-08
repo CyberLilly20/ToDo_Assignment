@@ -12,7 +12,7 @@ public class App {
 
         //Person husband = new Person(678910, "Konstantin", "Ristevski", "ko.ristevski@gmail.com");
         Person liljana = new Person(12345, "Liljana", "Ristevska", "li.ristevska@gimail.com");
-        System.out.println("¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ ToDo Task ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤");
+        System.out.println("¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ ToDo Task ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤");
         // System.out.println(husband.getSummary());
         System.out.println(liljana.getSummary());
 
