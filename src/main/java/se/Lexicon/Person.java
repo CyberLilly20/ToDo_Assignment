@@ -16,7 +16,7 @@ public class Person {
 
     //methods
 
-   @Override
+    @Override
     public String toString() {
         return "Person:" + " ID:" + id + " FirstName: " + firstName + " LastName: " + lastName + " email: " + email
                 ;
@@ -61,7 +61,7 @@ public class Person {
     }
 
     public String getSummary() {
-        return "ID:" + getId() + "  Name:" + getFirstName() + " " + getLastName() + " email:" + getEmail() ;
+        return "ID:" + getId() + "  Name:" + getFirstName() + " " + getLastName() + " email:" + getEmail();
     }
 }
 

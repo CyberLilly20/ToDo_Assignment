@@ -3,7 +3,6 @@ package se.Lexicon;
 import java.time.LocalDate;
 
 
-
 public class ToDoItem {
 
     private int id;
@@ -13,9 +12,9 @@ public class ToDoItem {
     private boolean done;
     private Person creator;
 
-    private ToDoItem item1;
+    // private ToDoItem item1;
 
-    public ToDoItem(int id, String title, String taskDescription, LocalDate deadLine, boolean done,Person creator) {
+    public ToDoItem(int id, String title, String taskDescription, LocalDate deadLine, boolean done, Person creator) {
         if (title == null || title.isEmpty()) throw new RuntimeException("Title cannot be null or empty");
         this.id = id;
         this.title = title;
@@ -44,7 +43,7 @@ public class ToDoItem {
 
 
     public String getSummary() {
-        return "ID:" + getId() + "Title:" + getTitle() + "Task: " + getTaskDescription() + "DeadLine" + getDeadLine();
+        return "ID:" + getId() + " Title:" + getTitle() + " Task:" + getTaskDescription() + " DeadLine:" + getDeadLine();
     }
 
     //set and get
@@ -63,6 +62,7 @@ public class ToDoItem {
     }
 
     public void setTitle(String title) {
+        if (title == null) throw new IllegalArgumentException("Title cannot be null!");
         this.title = title;
     }
 
@@ -78,17 +78,22 @@ public class ToDoItem {
         return deadLine;
     }
 
-    public void setLocalDate(int localDate) {
-        if (localDate == 0) throw new RuntimeException("Date cannot be 0!");
-        deadLine = LocalDate.ofEpochDay(localDate);
+    public void setLocalDate(LocalDate deadLine) {
+        if (deadLine == null) throw new IllegalArgumentException("Date cannot be null!");
+        //LocalDate deadLine = LocalDate.ofEpochDay(localDate);
+        this.deadLine = deadLine;
     }
 
-    public boolean isDeadLine() {
+   /* public boolean isDeadLine() {
+        return done;
+    }*/
+
+    public boolean isDone() {
         return done;
     }
 
     public void setDone(boolean deadLine) {
-        this.done = deadLine;
+        this.done = false;
     }
 
     public Person getCreator() {

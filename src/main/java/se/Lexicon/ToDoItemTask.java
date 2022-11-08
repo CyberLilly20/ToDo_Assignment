@@ -3,44 +3,44 @@ package se.Lexicon;
 public class ToDoItemTask {
     private int id;
     private boolean assigned;
-    private ToDoItem item1;
+
+    private ToDoItem toDoItem;
     private Person assignee;
 
-    public ToDoItemTask() {
-        if (item1 == null) throw new RuntimeException("ToDoItem cannot be null!");
+
+    public ToDoItemTask(int id, ToDoItem toDoItem, Person assignee) {
+
+        if (toDoItem == null) {
+            throw new IllegalArgumentException("ToDoItem cannot be null!");
+        }
         this.id = id;
-        this.item1 = item1;
+        this.toDoItem = toDoItem;
         this.assignee = assignee;
     }
-
-    public ToDoItemTask(int id, boolean done, String title, Person liljana) {
-        if (item1== null) throw new RuntimeException("ToDoItem cannot be null!");
-    }
-
     //methods
 
-    public String toString() {
-        return "ToDoItemTask:" + id + " Assigned:" + assigned + " ToDoItem:" + item1.toString() +
-                " Assignee:" + assignee.toString();
-    }
+  /*  public String toString() {
+        return "ToDoItemTask:" + id + " Assigned:" + assigned + " ToDoItem:" + toDoItem.getTitle() +
+                " Assignee:" + assignee.getFirstName();
+    }*/
 
 
+    public String getSummary() {
+        return "ToDoItemTask:" + id + " Assigned:" + assigned + " ToDoItem:" + toDoItem.getTitle() +
+                " Assignee:" + assignee.getFirstName();
 
-
-
-    public String getSummary(ToDoItemTask task) {
-        return toString(); //"Id:" + id + "Assigned: " + assigned + "Assignee: " + assignee.toString();
     }
 
     //Getters and Setters
 
 
     public ToDoItem getTodoItem() {
-        return this.item1;
+        return this.toDoItem;
     }
 
     public void setTodoItem(ToDoItem toDoItem) {
-        this.item1 = toDoItem;
+        //if(toDoItem == null) throw new IllegalArgumentException("ToDoItem cannot be null!");
+        this.toDoItem = toDoItem;
     }
 
     public int getId() {
