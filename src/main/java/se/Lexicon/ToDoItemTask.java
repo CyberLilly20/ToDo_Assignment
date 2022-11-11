@@ -1,15 +1,15 @@
 package se.Lexicon;
 
+import java.util.Objects;
+
 public class ToDoItemTask {
     private int id;
     private boolean assigned;
-
     private ToDoItem toDoItem;
     private Person assignee;
 
 
     public ToDoItemTask(int id, ToDoItem toDoItem, Person assignee) {
-
         if (toDoItem == null) {
             throw new IllegalArgumentException("ToDoItem cannot be null!");
         }
@@ -19,17 +19,33 @@ public class ToDoItemTask {
     }
     //methods
 
-  /*  public String toString() {
+    @Override
+    public String toString() {
+        return "ToDoItemTask{" +
+                "id: " + id +
+                ", assigned: " + assigned +
+                ", toDoItem: " + toDoItem +
+                '}';
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ToDoItemTask)) return false;
+        ToDoItemTask task = (ToDoItemTask) o;
+        return getId() == task.getId() && isAssigned() == task.isAssigned() && toDoItem.equals(task.toDoItem);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), isAssigned(), toDoItem);
+    }
+
+   /* public String getSummary() {
         return "ToDoItemTask:" + id + " Assigned:" + assigned + " ToDoItem:" + toDoItem.getTitle() +
                 " Assignee:" + assignee.getFirstName();
     }*/
-
-
-    public String getSummary() {
-        return "ToDoItemTask:" + id + " Assigned:" + assigned + " ToDoItem:" + toDoItem.getTitle() +
-                " Assignee:" + assignee.getFirstName();
-
-    }
 
     //Getters and Setters
 

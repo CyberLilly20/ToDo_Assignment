@@ -25,8 +25,11 @@ public class ToDoItemTaskTest {
     @Test
     public void testGetters() {
         assertEquals(10, testTask.getId());
-        assertEquals("Buy fruit ", testTask.getTodoItem());
-        assertEquals(LocalDate.parse("2022-11-20"), testTask.getAssignee());
+        ToDoItem expectedTodoItem = new ToDoItem(1, " Go to the store!", " Buy fruit ", LocalDate.parse("2022-11-20"), false, testPerson);
+        ToDoItem actualTodoItem = testTask.getTodoItem();
+        assertEquals(expectedTodoItem.getTitle(), actualTodoItem.getTitle());
+        assertEquals(expectedTodoItem.getId(), actualTodoItem.getId());
+        assertEquals(expectedTodoItem.getDeadLine(), actualTodoItem.getDeadLine());
 
     }
 

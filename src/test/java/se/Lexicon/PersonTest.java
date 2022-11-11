@@ -29,10 +29,15 @@ public class PersonTest {
 
     @Test
     public void testSetters(){
-        testPerson.setId(12345);
+        testPerson.setId(11);
         testPerson.setFirstName("Liljana");
         testPerson.setLastName("Ristevska");
         testPerson.setEmail("li.ristevska@gmail.com");
+
+        assertEquals(11, testPerson.getId());
+        assertEquals("Liljana", testPerson.getFirstName());
+        assertEquals("Ristevska", testPerson.getLastName());
+        assertEquals("li.ristevska@gmail.com", testPerson.getEmail());
     }
 
     @Test

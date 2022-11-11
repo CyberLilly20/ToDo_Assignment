@@ -1,10 +1,14 @@
 package se.Lexicon;
 
+import java.util.Objects;
+
 public class Person {
     private int id;
     private String firstName;
     private String lastName;
     private String email;
+
+    private AppUser credentials;
 
     public Person(int id, String firstName, String lastName, String email) {
         this.id = id;
@@ -22,8 +26,27 @@ public class Person {
                 ;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Person)) return false;
+        Person person = (Person) o;
+        return getId() == person.getId() && getFirstName().equals(person.getFirstName()) && getLastName().equals(person.getLastName()) && getEmail().equals(person.getEmail());
+    }
 
-    //set and get
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getFirstName(), getLastName(), getEmail());
+    }
+//set and get
+
+    public AppUser getCredentials() {
+        return credentials;
+    }
+
+    public void setCredentials(AppUser credentials) {
+        this.credentials = credentials;
+    }
 
     public int getId() {
         return id;

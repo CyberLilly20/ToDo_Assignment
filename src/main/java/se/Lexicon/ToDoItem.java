@@ -1,6 +1,7 @@
 package se.Lexicon;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 
 public class ToDoItem {
@@ -26,12 +27,16 @@ public class ToDoItem {
     }
     //methods
 
-
-   /* @Override
+    @Override
     public String toString() {
-        return "Go to the store" + "Id:" + id + " Buy fruit" + title + "We need apples and bananas." + taskDescription +
-                "LocalDate:" + deadLine + " done:" + done + " creator" + creator;
-    }*/
+        return "ToDoItem{" +
+                "id:" + id +
+                ", title:" + title + '\'' +
+                ", taskDescription:" + taskDescription + '\'' +
+                ", deadLine:" + deadLine +
+                ", done:" + done +
+                '}';
+    }
 
     public boolean isOverDue(ToDoItem task1) {
         LocalDate dateToDay = LocalDate.now();
@@ -41,10 +46,9 @@ public class ToDoItem {
         //return result < 0;
     }
 
-
-    public String getSummary() {
+   /* public String getSummary() {
         return "ID:" + getId() + " Title:" + getTitle() + " Task:" + getTaskDescription() + " DeadLine:" + getDeadLine();
-    }
+    }*/
 
     //set and get
 
@@ -103,4 +107,18 @@ public class ToDoItem {
     public void setCreator(Person creator) {
         this.creator = creator;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ToDoItem)) return false;
+        ToDoItem toDoItem = (ToDoItem) o;
+        return getId() == toDoItem.getId() && isDone() == toDoItem.isDone() && getTitle().equals(toDoItem.getTitle()) && getTaskDescription().equals(toDoItem.getTaskDescription()) && getDeadLine().equals(toDoItem.getDeadLine());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getTitle(), getTaskDescription(), getDeadLine(), isDone());
+    }
+
 }

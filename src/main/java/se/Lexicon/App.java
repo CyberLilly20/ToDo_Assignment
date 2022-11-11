@@ -14,11 +14,11 @@ public class App {
         Person liljana = new Person(12345, "Liljana", "Ristevska", "li.ristevska@gimail.com");
         System.out.println("¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ ToDo Task ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤");
         // System.out.println(husband.getSummary());
-        System.out.println(liljana.getSummary());
+        System.out.println(liljana);
 
 
         ToDoItem item1 = new ToDoItem(1, " Go to the store!", " Buy fruit ", LocalDate.parse("2022-11-20"), false, liljana);
-        System.out.println(item1.getSummary());
+        System.out.println(item1.toString());
 
         System.out.println("¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ Date ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤");
 
@@ -28,7 +28,9 @@ public class App {
         System.out.println("¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ Task ToDo¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤");
 
         ToDoItemTask task1 = new ToDoItemTask(10, item1, liljana);
-        System.out.println(task1.getSummary());
+        System.out.println(task1.toString());
+
+        System.out.println("Hashcode = " + item1.hashCode());
 
         //System.out.println("Is the task assigned: " + toDoItem.isOverDue() + " and is assigned to: " + task1.getAssignee());
         ///System.out.println("Task Information " + task1.toString());
