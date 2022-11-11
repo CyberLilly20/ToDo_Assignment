@@ -8,10 +8,11 @@ import java.time.format.DateTimeFormatter;
 import static java.time.format.DateTimeFormatter.ISO_LOCAL_DATE;
 
 public class App {
-    public static <TodoItem> void main(String[] args) {
+    public static void main(String[] args) {
 
-        //Person husband = new Person(678910, "Konstantin", "Ristevski", "ko.ristevski@gmail.com");
-        Person liljana = new Person(12345, "Liljana", "Ristevska", "li.ristevska@gimail.com");
+        AppUser liljana1 = new AppUser("Lile", "lile1234", AppRole.ROLE_APP_ADMIN);
+        AppUser husband = new AppUser("Koki", "koki...", AppRole.ROLE_APP_USER);
+        Person liljana = new Person(12345, "Liljana", "Ristevska", "li.ristevska@gimail.com", liljana1);
         System.out.println("¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ ToDo Task ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤");
         // System.out.println(husband.getSummary());
         System.out.println(liljana);
