@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17b07a12-4033-4c0f-b7b8-eddf5b313799" name="Changes" comment="Assignment is done">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/Lexicon/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/Lexicon/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/se/Lexicon/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/Lexicon/PersonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/se/Lexicon/ToDoItemTaskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/Lexicon/ToDoItemTaskTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/se/Lexicon/ToDoItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/Lexicon/ToDoItemTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="17b07a12-4033-4c0f-b7b8-eddf5b313799" name="Changes" comment="done ToDo part 2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -161,7 +155,13 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1667909689115</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="done ToDo part 2">
+      <created>1668343756204</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1668343756204</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,7 +178,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="it's not finished" />
     <MESSAGE value="Assignment is done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assignment is done" />
+    <MESSAGE value="done ToDo part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="done ToDo part 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
