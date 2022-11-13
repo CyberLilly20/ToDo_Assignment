@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b388d10c-c6f7-4ec4-bf04-1b9084f870e9" name="Changes" comment="Assignment is done">
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/Lexicon/AppRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/Lexicon/AppUser.java" afterDir="false" />
+    <list default="true" id="17b07a12-4033-4c0f-b7b8-eddf5b313799" name="Changes" comment="Assignment is done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/Lexicon/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/Lexicon/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/Lexicon/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/Lexicon/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/Lexicon/ToDoItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/Lexicon/ToDoItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/Lexicon/ToDoItemTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/Lexicon/ToDoItemTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/se/Lexicon/AppTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/se/Lexicon/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/Lexicon/PersonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/se/Lexicon/ToDoItemTaskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/Lexicon/ToDoItemTaskTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/se/Lexicon/ToDoItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/Lexicon/ToDoItemTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +44,7 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="PersonTest.getSummaryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppUserTest.testGetters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ToDo_Assignment" />
       <extension name="coverage">
         <pattern>
@@ -58,8 +53,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="se.Lexicon" />
-      <option name="MAIN_CLASS_NAME" value="se.Lexicon.PersonTest" />
-      <option name="METHOD_NAME" value="getSummaryTest" />
+      <option name="MAIN_CLASS_NAME" value="se.Lexicon.AppUserTest" />
+      <option name="METHOD_NAME" value="testGetters" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppUserTest.testSetters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ToDo_Assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.Lexicon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.Lexicon" />
+      <option name="MAIN_CLASS_NAME" value="se.Lexicon.AppUserTest" />
+      <option name="METHOD_NAME" value="testSetters" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -76,22 +87,6 @@
       <option name="PACKAGE_NAME" value="se.Lexicon" />
       <option name="MAIN_CLASS_NAME" value="se.Lexicon.PersonTest" />
       <option name="METHOD_NAME" value="testGetters" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonTest.testSetters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ToDo_Assignment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="se.Lexicon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="se.Lexicon" />
-      <option name="MAIN_CLASS_NAME" value="se.Lexicon.PersonTest" />
-      <option name="METHOD_NAME" value="testSetters" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PersonTest.testGetters" />
+        <item itemvalue="JUnit.AppUserTest.testGetters" />
+        <item itemvalue="JUnit.AppUserTest.testSetters" />
         <item itemvalue="JUnit.ToDoItemTaskTest.testSetters" />
         <item itemvalue="JUnit.ToDoItemTaskTest.testGetters" />
-        <item itemvalue="JUnit.PersonTest.getSummaryTest" />
-        <item itemvalue="JUnit.PersonTest.testSetters" />
-        <item itemvalue="JUnit.PersonTest.testGetters" />
       </list>
     </recent_temporary>
   </component>

@@ -10,11 +10,12 @@ public class Person {
 
     private AppUser credentials;
 
-    public Person(int id, String firstName, String lastName, String email) {
+    public Person(int id, String firstName, String lastName, String email,AppUser credentials) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.credentials = credentials;
     }
 
 
@@ -22,8 +23,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person:" + " ID:" + id + " FirstName: " + firstName + " LastName: " + lastName + " email: " + email
-                ;
+        return "Person:" + " ID:" + id + " FirstName: " + firstName + " LastName: " + lastName + " email: " + email;
     }
 
     @Override

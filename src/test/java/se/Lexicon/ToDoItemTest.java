@@ -10,7 +10,9 @@ import static org.junit.Assert.*;
 public class ToDoItemTest {
 
     private ToDoItem testItem;
-    private Person person = new Person(12345, "Liljana", "Ristevska", "li.ristevska@gmail.com");
+
+    AppUser liljana1 = new AppUser("Lile", "lile1234", AppRole.ROLE_APP_ADMIN);
+    private Person person = new Person(12345, "Liljana", "Ristevska", "li.ristevska@gmail.com", liljana1 );
 
     @Before
     public void beforeTest() {

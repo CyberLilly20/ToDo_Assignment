@@ -11,7 +11,9 @@ public class ToDoItemTaskTest {
 
 
     private ToDoItemTask testTask;
-    Person testPerson = new Person(12345, "Liljana", "Ristevska", "li.ristevska@gmail.com");
+
+    AppUser liljana1 = new AppUser("Lile", "lile1234", AppRole.ROLE_APP_ADMIN);
+    Person testPerson = new Person(12345, "Liljana", "Ristevska", "li.ristevska@gmail.com", liljana1);
     ToDoItem testItem = new ToDoItem(1, " Go to the store!", " Buy fruit ", LocalDate.parse("2022-11-20"), false, testPerson);
     @Before
     public void beforeTest() {
