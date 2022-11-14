@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17b07a12-4033-4c0f-b7b8-eddf5b313799" name="Changes" comment="done ToDo part 2" />
+    <list default="true" id="17b07a12-4033-4c0f-b7b8-eddf5b313799" name="Changes" comment="done ToDo part 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/Lexicon/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/Lexicon/Person.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +40,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.AppUserTest.testGetters">
     <configuration name="AppUserTest.testGetters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ToDo_Assignment" />
       <extension name="coverage">
@@ -131,7 +134,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b388d10c-c6f7-4ec4-bf04-1b9084f870e9" name="Changes" comment="" />
+      <changelist id="17b07a12-4033-4c0f-b7b8-eddf5b313799" name="Changes" comment="done ToDo part 2" />
       <created>1667494293134</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

@@ -83,9 +83,9 @@ public class Person {
         this.email = email;
     }
 
-    public String getSummary() {
+   /* public String getSummary() {
         return "ID:" + getId() + "  Name:" + getFirstName() + " " + getLastName() + " email:" + getEmail();
-    }
+    }*/
 }
 
 
