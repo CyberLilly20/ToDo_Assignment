@@ -1,7 +1,8 @@
-package se.Lexicon;
+package se.lexicon.model;
 
 import org.junit.Before;
 import org.junit.Test;
+import se.lexicon.model.*;
 
 import java.time.LocalDate;
 

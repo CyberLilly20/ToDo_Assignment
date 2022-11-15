@@ -1,7 +1,11 @@
-package se.Lexicon;
+package se.lexicon.model;
 
 import org.junit.Before;
 import org.junit.Test;
+import se.lexicon.model.AppRole;
+import se.lexicon.model.AppUser;
+import se.lexicon.model.Person;
+import se.lexicon.model.ToDoItem;
 
 import java.time.LocalDate;
 

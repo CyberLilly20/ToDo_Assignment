@@ -1,18 +1,21 @@
-package se.Lexicon;
+package se.lexicon;
 
 
-import java.sql.SQLOutput;
+import se.lexicon.dao.AppUserDao;
+import se.lexicon.dao.AppUserDaoCollection;
+import se.lexicon.model.*;
+
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-
-import static java.time.format.DateTimeFormatter.ISO_LOCAL_DATE;
 
 public class App {
     public static void main(String[] args) {
+        AppUserDao appUserDao = new AppUserDaoCollection();
 
-        AppUser liljana1 = new AppUser("Lile", "lile1234", AppRole.ROLE_APP_ADMIN);
+
+        AppUser insertedLiljana = appUserDao.persist(new AppUser("Lile", "lile1234", AppRole.ROLE_APP_ADMIN));
+
         AppUser husband = new AppUser("Koki", "koki...", AppRole.ROLE_APP_USER);
-        Person liljana = new Person(12345, "Liljana", "Ristevska", "li.ristevska@gimail.com", liljana1);
+        Person liljana = new Person(12345, "Liljana", "Ristevska", "li.ristevska@gimail.com", insertedLiljana);
         System.out.println("¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ ToDo Task ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤");
         // System.out.println(husband.getSummary());
         System.out.println(liljana);

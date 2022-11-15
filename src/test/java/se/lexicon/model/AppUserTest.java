@@ -1,7 +1,9 @@
-package se.Lexicon;
+package se.lexicon.model;
 
 import org.junit.Before;
 import org.junit.Test;
+import se.lexicon.model.AppRole;
+import se.lexicon.model.AppUser;
 
 import static org.junit.Assert.assertEquals;
 
