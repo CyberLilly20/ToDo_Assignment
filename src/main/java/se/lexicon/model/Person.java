@@ -1,5 +1,7 @@
 package se.lexicon.model;
 
+import se.lexicon.sequencer.PersonSequencer;
+
 import java.util.Objects;
 
 public class Person {
@@ -9,6 +11,14 @@ public class Person {
     private String email;
 
     private AppUser credentials;
+
+    public Person(String firstName, String lastName, String email,AppUser credentials) {
+        this.id = PersonSequencer.nextId();
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.credentials = credentials;
+    }
 
     public Person(int id, String firstName, String lastName, String email,AppUser credentials) {
         this.id = id;

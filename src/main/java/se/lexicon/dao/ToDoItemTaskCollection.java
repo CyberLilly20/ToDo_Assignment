@@ -1,7 +1,10 @@
 package se.lexicon.dao;
 
+import se.lexicon.model.Person;
 import se.lexicon.model.ToDoItem;
 import se.lexicon.model.ToDoItemTask;
+import se.lexicon.sequencer.ToDoItemSequencer;
+import se.lexicon.sequencer.ToDoItemTaskSequencer;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -17,13 +20,13 @@ public class ToDoItemTaskCollection implements ToDoItemTaskDao{
     @Override
     public ToDoItemTask persist(ToDoItemTask toDoItemTask) {
         if (toDoItemTask == null) throw new IllegalArgumentException("ToDoItemTask was null");
-        ToDoItemTask result = findById(toDoItemTask.getId());
-        if (result!= null) throw new IllegalArgumentException("You cannot use that username");
+        toDoItemTask.setId(ToDoItemTaskSequencer.nextId());
+        //ToDoItemTask result = findById(toDoItemTask.getId());
+       // if (result!= null) throw new IllegalArgumentException("You cannot use that username");
         todoItemTaskList.add(toDoItemTask);
 
         return toDoItemTask;
     }
-
     @Override
     public ToDoItemTask findById(int Id) {
         if (Id == 0) throw new IllegalArgumentException("Id was null");

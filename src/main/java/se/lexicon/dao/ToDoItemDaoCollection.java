@@ -3,6 +3,8 @@ package se.lexicon.dao;
 import se.lexicon.model.AppUser;
 import se.lexicon.model.Person;
 import se.lexicon.model.ToDoItem;
+import se.lexicon.sequencer.PersonSequencer;
+import se.lexicon.sequencer.ToDoItemSequencer;
 
 import java.time.LocalTime;
 import java.time.LocalDateTime;
@@ -22,8 +24,9 @@ public class ToDoItemDaoCollection implements ToDoItemDao {
     @Override
     public ToDoItem persist(ToDoItem todoItem) {
         if (todoItem == null) throw new IllegalArgumentException("ToDoItem was null");
-        ToDoItem result = findById(todoItem.getId());
-        if (result != null) throw new IllegalArgumentException("You cannot use that username");
+        todoItem.setId(ToDoItemSequencer.nextId());
+       // ToDoItem result = findById(todoItem.getId());
+       // if (result != null) throw new IllegalArgumentException("You cannot use that username");
         todoItemList.add(todoItem);
 
         return todoItem;
@@ -59,7 +62,7 @@ public class ToDoItemDaoCollection implements ToDoItemDao {
     public Collection<ToDoItem> findByTitleContains(String title) {
         Collection<ToDoItem> it = new ArrayList<>();
         for (ToDoItem currentElement : todoItemList) {
-            if (currentElement.getTitle().contains(title.toLowerCase());
+            if (currentElement.getTitle().contains(title.toLowerCase()));
             it.add(currentElement);
         }
         return it;

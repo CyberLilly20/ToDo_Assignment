@@ -4,7 +4,7 @@ public class ToDoItemTaskSequencer {
 
     private static int currentId;
 
-    private static int nextId() {
+    public static int nextId() {
         return ++currentId;
     }
 

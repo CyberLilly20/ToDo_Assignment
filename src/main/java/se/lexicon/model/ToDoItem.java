@@ -15,6 +15,15 @@ public class ToDoItem {
 
     // private ToDoItem item1;
 
+    public ToDoItem(String title, String taskDescription, LocalDate deadLine, boolean done, Person creator) {
+        if (title == null || title.isEmpty()) throw new RuntimeException("Title cannot be null or empty");
+        this.title = title;
+        this.taskDescription = taskDescription;
+        this.deadLine = deadLine;
+        this.done = false;
+        this.creator = creator;
+
+    }
     public ToDoItem(int id, String title, String taskDescription, LocalDate deadLine, boolean done, Person creator) {
         if (title == null || title.isEmpty()) throw new RuntimeException("Title cannot be null or empty");
         this.id = id;

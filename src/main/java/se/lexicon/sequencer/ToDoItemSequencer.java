@@ -3,7 +3,7 @@ package se.lexicon.sequencer;
 public class ToDoItemSequencer {
     private static int currentId;
 
-    private static int nextId() {
+    public static int nextId() {
         return ++currentId;
     }
 

@@ -1,6 +1,7 @@
 package se.lexicon.dao;
 
 import se.lexicon.model.Person;
+import se.lexicon.sequencer.PersonSequencer;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -19,10 +20,8 @@ public class PersonDaoCollection implements PersonDao {
     @Override
     public Person persist(Person person) {
         if (person == null) throw new IllegalArgumentException("Person is null");
-        Person findId = findById(person.getId());
-        for (Person per : personList) ;
+        person.setId(PersonSequencer.nextId());
         personList.add(person);
-
         return person;
     }
 

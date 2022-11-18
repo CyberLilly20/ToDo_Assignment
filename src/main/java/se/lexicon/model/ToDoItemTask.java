@@ -9,6 +9,13 @@ public class ToDoItemTask {
     private Person assignee;
 
 
+    public ToDoItemTask(ToDoItem toDoItem, Person assignee) {
+        if (toDoItem == null) {
+            throw new IllegalArgumentException("ToDoItem cannot be null!");
+        }
+        this.toDoItem = toDoItem;
+        this.assignee = assignee;
+    }
     public ToDoItemTask(int id, ToDoItem toDoItem, Person assignee) {
         if (toDoItem == null) {
             throw new IllegalArgumentException("ToDoItem cannot be null!");
@@ -61,6 +68,10 @@ public class ToDoItemTask {
 
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public boolean isAssigned() {
